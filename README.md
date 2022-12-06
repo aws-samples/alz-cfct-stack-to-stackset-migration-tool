@@ -3,6 +3,8 @@
 
 This scripted solution performs stackset to stackset CloudFormation stack instance migrations.  It deletes and retains the stack instance(s) from the source stackset.  It then waits for completion prior to importing the stack instances into the target stackset.  Once completed, it runs a stackset update on the target stackset to ensure consistency with the imported stacks.  The assumption is that you have an empty stackset with a matching template targeting an empty OU.  The script is designed to be used for Landing Zone pipeline to Customizations for Control Tower pipeline migration activities, but can serve other uses where it is necessary to migrate stack instances from one stackset to another. 
 
+This repository provides the tools for the process described in this [Amazon Prescriptive Guidance](https://apg-library.amazonaws.com/content/05357757-2d45-4730-830a-f480421fa9f0)
+
 ## migrate.sh
 ---
 
